@@ -19,11 +19,9 @@
 
 <ion-content padding>
 <div id="board">
-  <div class="row">
-    <div class="wh">
-      
-    </div>
-    <div class="bl" id="1"></div>
+  <div class="row" *ngFor ="let meal of meals">
+    <div class="wh"> </div>
+    <div class="bl" id="1" ></div>
     <div class="wh" ></div>
     <div class="bl" id="2"></div>
     <div class="wh"></div>

@@ -4,12 +4,13 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { GameBoardPage } from '../pages/game-board/game-board';
+import { GridPage } from '../pages/grid/grid';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = GameBoardPage;
+  rootPage = GridPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {

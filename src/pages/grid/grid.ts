@@ -2,21 +2,19 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 /*
-  Generated class for the GameBoard page.
+  Generated class for the Grid page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-game-board',
-  templateUrl: 'game-board.html'
+  selector: 'page-grid',
+  templateUrl: 'grid.html'
 })
-export class GameBoardPage {
-
-  gameState : any = []; 
- 
-
+export class GridPage {
+  gameState: any[]; 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
 
     this.gameState = [
       'R',
@@ -54,9 +52,12 @@ export class GameBoardPage {
 
     ]
   } 
+  
+
+
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad GameBoardPage');
+    console.log('ionViewDidLoad GridPage');
   }
 
 }
