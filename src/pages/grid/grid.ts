@@ -62,6 +62,10 @@ export class GridPage {
       document.body.appendChild(x);
     }
 
+    nextPage(): void {
+
+      console.log('Hello!');
+    }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad GridPage');
