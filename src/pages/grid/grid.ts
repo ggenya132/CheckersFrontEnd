@@ -16,6 +16,8 @@ export class GridPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
 
+
+
     this.gameState = [
       'R',
       'R',
@@ -52,8 +54,13 @@ export class GridPage {
 
     ]
   } 
-  
 
+
+      myFunction(): void {
+    var x = document.createElement("IMG");
+     x.setAttribute("src", "../../assets/RedChecker.png");
+      document.body.appendChild(x);
+    }
 
 
   ionViewDidLoad() {
